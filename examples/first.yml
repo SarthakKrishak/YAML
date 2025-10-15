@@ -53,3 +53,61 @@ procedure4: ~
 # Timestamps
 
 date: 2025-01-15
+local_time: 2025-01-15 08:30:01
+
+# List
+
+Tech_Stack:
+  - React
+  - next
+  - tailwind
+  - postgres
+  - true
+  - 20
+
+# Tech_Stack: [React,next,tailwind]   this is also the same , used previosly
+
+
+# Nested List
+
+Sub_techStack:
+  - name: Frontend
+    Tech_Stack:
+      - React
+      - next
+      - tailwind
+      - Shadcn
+  - name: Backend
+    Tech_Stack:
+      - Mongo db
+      - postgres
+      - express
+      - node js
+
+# Reference
+
+deploy_pipeline: &default_base   # anchor or alias
+  title: "abc"
+  Tech_Stack: "MERN"
+
+
+proj1: 
+  <<: *default_base
+  auth: "OAuth"  
+
+proj2: 
+  <<: *default_base
+  auth: "firebase"
+
+# Type Casting
+
+zipcode: !!str 1234
+count: !!int "1234"
+
+# Sets
+
+unique: !!set
+  ? first
+  ? second
+  ? third
+
