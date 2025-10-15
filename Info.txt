@@ -1,0 +1,20 @@
+Extension-
+
+You can write .yaml or .yml 
+
+--------
+
+Comments- 
+
+# is used to write comments and there is no other syntax for multi line comments
+
+--------
+
+Writting format-
+
+procedure:
+  steps: 2
+
+we give two spaces before writing the steps not tab
+
+also there should be a space after : as well other wise it will give you error.

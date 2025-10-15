@@ -1,0 +1,55 @@
+version: 3.2
+name: recon
+temprature: hot
+quantity: 2
+
+# Comments are written using this 
+
+procedure:
+  step: 2
+  quantity: 5
+
+procedure2:
+  step: 3
+  quantity: 6
+
+name2: delta
+description: "This is the yaml file"
+tagline: 'the yaml code file'
+
+instruction: |
+  initialize
+  design
+  code
+  test
+  deploy
+  staging
+  prod
+
+# Both are same 
+
+instruction1: >
+  initialize
+  design
+  code
+  test
+  deploy
+  staging
+  prod
+
+# For the boolean yes,no / on,off / true,false all are valid
+
+age: 20
+height: 182.5
+elec: 1.6e+10^-19
+all_Compulsary: yes
+age_above18: true
+
+# ~ and null are having same meaning
+
+procedure3: null
+procedure4: ~
+
+# Timestamps
+
+date: 2025-01-15
